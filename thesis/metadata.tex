@@ -1,5 +1,4 @@
 
-
 %%% Choose a language %%%
 
 \newif\ifEN
@@ -18,15 +17,15 @@
 \def\UKName{Charles University in Prague} % this is not used in the "mff" style
 
 % Thesis type names, as used in several places in the title
-\def\ThesisTypeTitle{\ifEN BACHELOR THESIS \else BAKALÁRSKA PRÁCA \fi}
+\def\ThesisTypeTitle{\ifEN BACHELOR THESIS \else BAKALÁŘSKÁ PRÁCE \fi}
 %\def\ThesisTypeTitle{\ifEN MASTER THESIS \else DIPLOMOVÁ PRÁCE \fi}
 %\def\ThesisTypeTitle{\ifEN RIGOROUS THESIS \else RIGORÓZNÍ PRÁCE \fi}
 %\def\ThesisTypeTitle{\ifEN DOCTORAL THESIS \else DISERTAČNÍ PRÁCE \fi}
-\def\ThesisGenitive{\ifEN bachelor \else bakalárskej \fi}
+\def\ThesisGenitive{\ifEN bachelor \else bakalářské \fi}
 %\def\ThesisGenitive{\ifEN master \else diplomové \fi}
 %\def\ThesisGenitive{\ifEN rigorous \else rigorózní \fi}
 %\def\ThesisGenitive{\ifEN doctoral \else disertační \fi}
-\def\ThesisAccusative{\ifEN bachelor \else bakalársku \fi}
+\def\ThesisAccusative{\ifEN bachelor \else bakalářskou \fi}
 %\def\ThesisAccusative{\ifEN master \else diplomovou \fi}
 %\def\ThesisAccusative{\ifEN rigorous \else rigorózní \fi}
 %\def\ThesisAccusative{\ifEN doctoral \else disertační \fi}
@@ -36,9 +35,9 @@
 %%% Fill in your details %%%
 
 % (Note: \xxx is a "ToDo label" which makes the unfilled visible. Remove it.)
-\def\ThesisTitle{Detekcia anonymizovaných častí v PDF dokumentoch}
+\def\ThesisTitle{Detekcia anonymizovaných častí v~zmluvách}
 \def\ThesisAuthor{Lukáš Salak}
-\def\YearSubmitted{2023}
+\def\YearSubmitted{2024}
 
 % department assigned to the thesis
 \def\Department{Katedra softwaru a výuky informatiky}
@@ -46,41 +45,43 @@
 \def\DeptType{Katedra}
 
 \def\Supervisor{doc. RNDr. Elena Šikudová, Ph.D.}
-\def\SupervisorsDepartment{Katedra softwaru a výuky informatiky}
+\def\SupervisorsDepartment{Katedra softwaru a~výuky informatiky}
 
 % Study programme and specialization
 \def\StudyProgramme{Informatika}
 \def\StudyBranch{Počítačová grafika, vidění a vývoj her}
 
 \def\Dedication{%
-Dedikácia. Nesmierne si cením podpory a pomoci, ktoré som dostal od mnohých ľudí, 
-menovite od mojej rodiny, priateľky, priateľov, spolužiakov a kolegov. Najviac však by som chcel 
+Dedikácia. Nesmierne si cením podpory a pomoci, ktorú som dostal od mnohých ľudí, 
+menovite od mojej rodiny, mojej priateľky, priateľov, spolužiakov a kolegov. Najviac však by som chcel 
 poďakovať vedúcej mojej bakalárskej práce,
 doc. RNDr. Elene Šikudovej, Ph.D., ktorá mi pomohla pri všetkom, čo som potreboval.
 }
 
 \def\AbstractEN{%
-\xxx{TODO%Abstracts are an abstract form of art. Use the most precise, shortest sentences that state what problem the thesis addresses, how it is approached, pinpoint the exact result achieved, and describe the applications and significance of the results. Highlight anything novel that was discovered or improved by the thesis. Maximum length is 200 words, but try to fit into 120. Abstracts are often used for deciding if a reviewer will be suitable for the thesis; a well-written abstract thus increases the probability of getting a reviewer who will like the thesis.}
-% ABSTRACT IS NOT A COPY OF YOUR THESIS ASSIGNMENT!
-}}
+The work examines the problem of detecting anonymized parts in PDF documents. Various detection approaches, primarily image analysis and related computer vision algorithms, were explored. We implemented and evaluated the best of these approaches on test data. The results showed that the implemented approach achieved high accuracy and outperformed other approaches also in terms of efficiency. This research contributes to the development of tools to help analyze documents that can be applied in various legal or financial areas to guarantee data protection in accordance with regulations.
+}
 
 \def\ProposalEN{%
-\xxx{The goal is to calculate the ratio of anonymized parts in given PDF - that cna be either blackened, overlayed with noise or whitened completely. The work will consist of an introduction to the issue and analysis of the problem, proposals for the procedures, selection and implementation of analytical operations over PDF, comparison of individual approaches to the problem and outputs of individual operations and the resulting statistics, which will be the output of the implemented program.}
+The goal is to calculate the ratio of anonymized parts in given PDF - that cna be either blackened, overlayed with noise or whitened completely. The work will consist of an introduction to the issue and analysis of the problem, proposals for the procedures, selection and implementation of analytical operations over PDF, comparison of individual approaches to the problem and outputs of individual operations and the resulting statistics, which will be the output of the implemented program.
 }
 
 \def\AbstractSK{%
-\xxx{TODO %You will need to submit both Czech and English abstract to the SIS, no matter what language you use in the thesis. If writing in English, translate the contents of \texttt{\textbackslash{}AbstractEN} into this field. In case you do not speak czech, your supervisor should be able to help you with the translation.}
-}}
+\begin{hyphenrules}{nohyphenation}
+Práca skúma problém detegovania anonymizovaných častí v PDF dokumentoch. Preskúmané  boli rôzne prístupy na detekciu, primárne analýza obrazu a s ňou spojené rôzne algoritmy počítačového videnia. Najlepší z týchto prístupov sme implementovali a vyhodnotili na testovacích dátach. Výsledky ukázali, že implementovaný prístup dosiahol vysokú presnosť a predbehol iné prístupy aj vzhľadom na efektivitu. Tento výskum prispieva k rozvoju nástrojov pomáhajúcich analyzovať dokumenty, ktoré môžu byť aplikované v~rôznych právnych či finančných oblastiach na zaručenie ochrany dát v~súlade s~reguláciami.
+\end{hyphenrules}
+}
 
 \def\ProposalSK{%
-\xxx{Cieľom je v zadanom PDF spočítať začiernenú plochu - môže byť buď začiernená, zaplnená zrnením či prípadne zabielená. Obsahom práce bude uvedenie do problematiky a analýza problému, návrhy postupu, výber a implementácia analytických operácií nad PDF, porovnanie jednotlivých prístupov k problému a výstupy jednotlivých opercií a výsledná štatistika, ktorá bude výstupom implementovaného programu.}
+Cieľom je v zadanom PDF spočítať začiernenú plochu - môže byť buď začiernená, zaplnená zrnením či prípadne zabielená. Obsahom práce bude uvedenie do problematiky a analýza problému, návrhy postupu, výber a implementácia analytických operácií nad PDF, porovnanie jednotlivých prístupov k problému a výstupy jednotlivých opercií a výsledná štatistika, ktorá bude výstupom implementovaného programu.
 }
+
 
 
 % 3 to 5 keywords (recommended), each enclosed in curly braces.
 % Keywords are useful for indexing and searching for the theses by topic.
 \def\Keywords{%
-\xxx{{key} {words}}
+{PDF, Segmentace, Detekce}
 }
 
 % If your abstracts are long and do not fit in the infopage, you can make the
@@ -96,10 +97,12 @@ doc. RNDr. Elene Šikudovej, Ph.D., ktorá mi pomohla pri všetkom, čo som potr
 \def\ThesisTitleEN{Detection of anonymized parts in PDFs}
 \def\DepartmentEN{Department of Software and Computer Science Education}
 \def\DeptTypeEN{Department}
-\def\SupervisorsDepartmentEN{Department of Software and Computer Science Education}
+\def\SupervisorsDepartmentEN{Department of Software \newline and~Computer Science Education}
 \def\StudyProgrammeEN{Computer Science}
 \def\StudyBranchEN{Computer Graphics, Vision and Game Development}
 \def\KeywordsEN{%
-\xxx{{key} {words}}
+{PDF, Segmentation, Detection}
 }
 \fi
+
+\newenvironment{specialpar}[1]{\par#1}{\par}

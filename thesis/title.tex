@@ -44,13 +44,13 @@
 {
 \centerline{\vbox{\halign{\hbox to 0.45\hsize{\hfil #}&\hskip 0.5em\parbox[t]{0.45\hsize}{\raggedright #}\cr
 \ifEN Supervisor of the \ThesisGenitive thesis:
-\else Vedúci \ThesisGenitive práce: \fi
+\else Vedoucí \ThesisGenitive práce: \fi
 & \Supervisor \cr
 \noalign{\vspace{2mm}}
-\ifEN Study programme: \else Študijný program: \fi
+\ifEN Study programme: \else Studijní program: \fi
 & \StudyProgramme \cr
 \noalign{\vspace{2mm}}
-\ifEN Study branch: \else Študijný obor: \fi
+\ifEN Study branch: \else Studijní obor: \fi
 & \StudyBranch \cr
 }}}}
 
@@ -62,12 +62,11 @@
 \end{center}
 
 \newpage
-
 % remember to sign this!
-%\openright
+
 \hypersetup{pageanchor=true}
 \pagestyle{plain}
-\pagenumbering{roman}
+\pagenumbering{gobble}
 \vglue 0pt plus 1fill
 
 \ifEN
@@ -77,9 +76,8 @@ sources, literature and other professional sources. It has not been used to obta
 or the same degree.
 \else
 \noindent
-Prehlasujem, že som túto \ThesisAccusative prácu vypracoval samostatne a výhradne
-s~použitím citovaných prameňov, literatúry a ďalších odborných zdrojov.
-Táto práca nebola využitá k získaniu iného alebo rovnakého titulu.
+Prohlašuji, že jsem tuto \ThesisAccusative práci vypracoval samostatně a výhradně
+s~použitím citovaných pramenů, literatury a dalších odborných zdrojů.
 \fi
 
 \ifEN
@@ -91,7 +89,7 @@ work as a school work pursuant to Section 60 subsection 1 of the Copyright~Act.
 \else
 \medskip\noindent
 Beru na~vědomí, že se na moji práci vztahují práva a povinnosti vyplývající
-ze zákona č. 121/2000 Sb., autorského zákona v~platném znění, zejména skutečnost,
+ze~zákona č. 121/2000 Sb., autorského zákona v~platném znění, zejména skutečnost,
 že Univerzita Karlova má právo na~uzavření licenční smlouvy o~užití této
 práce jako školního díla podle §60 odst. 1 autorského zákona.
 \fi
@@ -118,8 +116,6 @@ V \hbox to 6em{\dotfill} dne \hbox to 6em{\dotfill}
 
 % dedication
 
-%\openright
-
 \noindent
 \Dedication
 
@@ -127,13 +123,11 @@ V \hbox to 6em{\dotfill} dne \hbox to 6em{\dotfill}
 
 % mandatory information page
 
-%\openright
-
 \vbox to 0.49\vsize{\InfoPageFont
 \setlength\parindent{0mm}
 \setlength\parskip{5mm}
 
-\ifEN Title: \else Názov práce: \fi
+\ifEN Title: \else Název práce: \fi
 \ThesisTitle
 
 \ifEN Author: \else Autor: \fi
@@ -142,14 +136,12 @@ V \hbox to 6em{\dotfill} dne \hbox to 6em{\dotfill}
 \DeptType:
 \Department
 
-\ifEN Supervisor: \else Vedúci \ThesisGenitive práce: \fi
+\ifEN Supervisor: \else Vedoucí bakalářské práce: \fi
 \Supervisor, \SupervisorsDepartment
 
 \ifEN Abstract: \AbstractEN \else Abstrakt: \AbstractSK \fi
 
-\ifEN Proposal: \ProposalEN \else Námet: \ProposalSK \fi
-
-\ifEN Keywords: \else Kľúčové slová: \fi
+\ifEN Keywords: \else Klíčová slova: \fi
 \Keywords
 
 \vss}\ifEN\relax\else\nobreak\vbox to 0.49\vsize{\InfoPageFont
@@ -166,23 +158,15 @@ Author:
 \DepartmentEN
 
 Supervisor:
+\begin{hyphenrules}{nohyphenation}
 \Supervisor, \SupervisorsDepartmentEN
+\end{hyphenrules}
 
 Abstract:
 \AbstractEN
-
-Proposal:
-\ProposalEN
 
 Keywords:
 \KeywordsEN
 
 \vss}
 \fi
-
-\newpage
-
-%\openright
-\pagestyle{plain}
-\pagenumbering{arabic}
-\setcounter{page}{1}

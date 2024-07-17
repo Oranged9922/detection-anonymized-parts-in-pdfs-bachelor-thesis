@@ -7,7 +7,7 @@
 
 \usepackage[a-2u]{pdfx}
 
-\ifEN\else\usepackage[czech,shorthands=off]{babel}\fi
+\ifEN\else\usepackage[slovak,shorthands=off]{babel}\fi
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -51,6 +51,8 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{floatrow}
+\usepackage{wrapfig}
+
 
 % load bibliography tools
 \usepackage[backend=bibtex,natbib,style=numeric,sorting=none]{biblatex}
@@ -87,7 +89,6 @@
 
 % load the file with bibliography entries
 \addbibresource{refs}
-
 % remove this if you won't use fancy verbatim environments
 \usepackage{fancyvrb}
 
@@ -116,7 +117,8 @@
 \begin{document}
 
 \include{title}
-
+\pagenumbering{arabic}
+\setcounter{page}{4}
 \tableofcontents
 \include{intro}
 \include{ch1}
@@ -127,9 +129,7 @@
 \include{ch6}
 \include{conclusion}
 \include{bibliography}
-
-\appendix
-\include{appendixA}
+\include{appendix}
 
 % if your attachments are complicated, describe them in a separate appendix
 %\include{attachments}

@@ -1,10 +1,45 @@
-
-\chapwithtoc{Záver}
-
-In the conclusion, you should summarize what was achieved by the thesis. In a few paragraphs, try to answer the following:
+\label{chap:conclusion}
+\chapter{Záver}
+\section{Zhrnutie dosiahnutých výsledkov}
+\begin{hyphenrules}{nohyphenation}
+V práci sme sa zamerali na vývoj a testovanie programu s algoritmom na detekciu anonymizovaných oblastí v dokumentoch. Výsledky, ktoré sme dosiahli, zahŕňajú:
 \begin{itemize}
-\item Was the problem stated in the introduction solved? (Ideally include a list of successfully achieved goals.)
-\item What is the quality of the result? Is the problem solved for good and the mankind does not need to ever think about it again, or just partially improved upon? (Is the incompleteness caused by overwhelming problem complexity that would be out of thesis scope\todo{This is quite common.}, or any theoretical reasons, such as computational hardness?)
-\item Does the result have any practical applications that improve upon something realistic?
-\item Is there any good future development or research direction that could further improve the results of this thesis? (This is often summarized in a separate subsection called `Future work'.)
+    \item Vývoj algoritmu na detekciu anonymizovaných oblastí
+
+    Implementovali sme algoritmus schopný detegovať anonymizované oblasti rôznych typov v skenovaných a digitálnych dokumentoch. Algoritmus sme navrhli tak, aby bol schopný detegovať rôzne anonymizované oblasti, vrátane nepravidelných a farebných či šumových anonymizácií.
+    \item Testovanie a validácia
+
+    Algoritmus sme testovali na mnohých dokumentoch, ktoré zahŕňali rôzne typy anonymizácie. Výsledky ukázali vysokú presnosť detekcie v prípade bežných typov anonymizovania, ako sú čierne obdĺžniky a farebné nálepky.
+    \item Špecifické výzvy
+
+    Podrobnou analýzou sme identifikovali problémy spojené s detekciou anonymizovaných oblastí v prípade nekvalitných skenov a dokumentov s~rôznymi druhmi rušivých elementov. Tieto výzvy boli čiastočne vyriešené, no stále je tu priestor na ďalší výskum a zlepšenie.
+
+    \item Možnosti integrácie a nasadenia
+
+    V súčasnej dobe nie je aplikácia integrovaná so žiadnym iným systémom ani nasadená ako samostatná aplikácia. Aplikácia je však vhodná k použitiu ako referenčná implementácia. V budúcnosti je možnosť integrácie tejto aplikácie v rámci Hlídače státu\cite{HlidacStatu}.
+\newline 
+
 \end{itemize}
+
+\section{Doporučenia pre ďalší výskum}
+Vychádzajúc z našich zistení a výsledkov máme niekoľko doporučení pre budúci výskum v oblasti detekcie anonymizovaných oblastí:
+\begin{itemize}
+    \item Vyššia odolnosť voči rušivým elementom
+
+    Významným problémom, ktorému je možné venovať sa bližšie, je redukcia rušivých elementov v dokumentoch, obzvlášť v prípade nekvalitných skenov, ale aj digitálných dokumentov. Jedná sa o logá firiem, úradné pečiatky, záhlavia tabuliek či iné rušivé elementy, ktoré sú problémom pre náš algoritmus pri správnom vyhodnocovaní a vyriešením tohoto problému by sa prispelo k redukcii falošne pozitívnych detekcií.
+
+    \item Využitie metód strojového učenia
+
+    Implementácia konvolučných sietí alebo iných metód strojového učenia môže zvýšiť presnosť a správnosť detekcie. Problémom je tu však absencia datasetu, na základe ktorého by mohla byť takáto konvolučná sieť namodelovaná.
+
+\end{itemize}
+
+\section{Osobné zistenia a závery}
+Pri práci na tejto téme sme si uvedomili viacero kľúčových bodov, ktoré sú dôležité pre správne pochopenie z pohľadu technického vývoja. Medzi najdôležitejšie body uvádzame komplexnosť a rôznorodosť reálnych dát. Rôzne formáty dokumentov, kvalita skenov, typy anonymizácií predstavovali a predstavujú výzvy, ktoré si vyžadujú komplexné a flexibilné riešenia. 
+\newline
+
+Ďalším bodom, ktorý spomenieme, je spoľahlivosť a presnosť. Falošne pozitívne výsledky môžu mať závažné dopady, obzvlášť v prípade, že by sa na základe týchto výsledkov hodnotila transparentnosť či dôvernosť inštitúcií, ktoré takéto dokumenty, resp. zmluvy zverejňujú.
+\newline
+
+Dúfame, že tieto zistenia a závery poslúžia ako základ pre ďalší vývoj a výskum v oblasti detekcie anonymizovaných oblastí v dokumentoch.
+\end{hyphenrules}
